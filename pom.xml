@@ -71,6 +71,11 @@
       <scope>provided</scope>
     </dependency>
 
+    <dependency>
+      <groupId>commons-dbutils</groupId>
+      <artifactId>commons-dbutils</artifactId>
+      <version>1.6</version>
+    </dependency>
     <!--dependency>
       <groupId>forum</groupId>
       <artifactId>[the artifact id of the block to be mounted]</artifactId>
