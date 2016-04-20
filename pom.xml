@@ -27,6 +27,13 @@
   <groupId>forum</groupId>
   <artifactId>helloforum</artifactId>
   <version>1.0-SNAPSHOT</version>
+  <!--使用jitpack.io导入github中不在maven中央仓库中的项目 website:https://jitpack.io-->
+  <repositories>
+    <repository>
+      <id>jitpack.io</id>
+      <url>https://jitpack.io</url>
+    </repository>
+  </repositories>
 
   <build>
     <plugins>
@@ -71,16 +78,56 @@
       <scope>provided</scope>
     </dependency>
 
+
     <dependency>
       <groupId>commons-dbutils</groupId>
       <artifactId>commons-dbutils</artifactId>
       <version>1.6</version>
     </dependency>
-    <!--dependency>
-      <groupId>forum</groupId>
-      <artifactId>[the artifact id of the block to be mounted]</artifactId>
-      <version>1.0-SNAPSHOT</version>
-    </dependency-->
+      <dependency>
+          <groupId>com.github.pusuo</groupId>
+          <artifactId>patchca</artifactId>
+          <version>d3e2b0b5ba</version>
+      </dependency>
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-dbcp2</artifactId>
+      <version>2.1.1</version>
+    </dependency>
+
+    <dependency>
+      <groupId>com.google.guava</groupId>
+      <artifactId>guava</artifactId>
+      <version>19.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-lang3</artifactId>
+      <version>3.4</version>
+    </dependency>
+
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>5.1.38</version>
+    </dependency>
+    <dependency>
+      <groupId>joda-time</groupId>
+      <artifactId>joda-time</artifactId>
+      <version>2.9.3</version>
+    </dependency>
+      <dependency>
+          <groupId>com.google.code.gson</groupId>
+          <artifactId>gson</artifactId>
+          <version>2.6.2</version>
+      </dependency>
+
+
+      <!--dependency>
+        <groupId>forum</groupId>
+        <artifactId>[the artifact id of the block to be mounted]</artifactId>
+        <version>1.0-SNAPSHOT</version>
+      </dependency-->
   </dependencies>
 
 </project>
